@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Priority Based EV Charging Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>⚡ Multi-Port EV Charging Station</h1>
+<p class="subtitle">Emergency Priority Based Charging (Live)</p>
+
+<div class="container">
+
+    <div class="card emergency">
+        <h2>🚑 Emergency Vehicle</h2>
+        <div class="bar">
+            <div id="soc_emg" class="fill"></div>
+        </div>
+        <p><span id="emg_val">0</span>%</p>
+    </div>
+
+    <div class="card">
+        <h2>🚗 EV-1</h2>
+        <div class="bar">
+            <div id="soc_ev1" class="fill"></div>
+        </div>
+        <p><span id="ev1_val">0</span>%</p>
+    </div>
+
+    <div class="card">
+        <h2>🚙 EV-2</h2>
+        <div class="bar">
+            <div id="soc_ev2" class="fill"></div>
+        </div>
+        <p><span id="ev2_val">0</span>%</p>
+    </div>
+
+</div>
+
+<div class="mode">
+    <h2>🔄 Charging Mode</h2>
+    <p id="mode">Waiting for data...</p>
+    <p class="time" id="time">--:--:--</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
